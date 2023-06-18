@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+Игры
+{% endblock %}
+{% block link %}
+	<link rel="stylesheet" href={% static 'css/games.css' %}>
+{% endblock %}
+{% block li %}
+<li><a class="Top_menu_game" href={% url 'games' %}>Игры</a></li>
+<li><a class="Top_menu_blog" href={% url 'blog' %}>Блог</a></li>
+<li><a class="Top_menu_about" href={% url 'about' %}>О нас</a></li>
+{% endblock %}
+{% block content %}
+{% for el in games %}
+	<div class="games" style="background-image:url({% static el.img_game %})">
+		<div class="box_game">	
+			<a class="link_to_blog text_game" href={% url 'game' el.name_game %}>
+				блог про {{el.name_game}}
+			</a>
+			<p class="text_game">{{el.text_game}}
+			<div class="box_link">
+				{% if "a" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/a.png' %}></a>
+				{% endif %}
+				{% if "e" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/e.png' %}></a>
+				{% endif %}
+				{% if "i" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/i.png' %}></a>
+				{% endif %}
+				{% if "n" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/n.png' %}></a>
+				{% endif %}
+				{% if "p" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/p.png' %}></a>
+				{% endif %}
+				{% if "s" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/s.png' %}></a>
+				{% endif %}
+				{% if "v" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/v.png' %}></a>
+				{% endif %}
+				{% if "y" in el.link_game %}
+					<a href=""><img class="bloc_img" src={% static 'images/logos/y.png' %}></a>
+				{% endif %}
+			</div>
+		</div>
+		
+	</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,104 @@
+.image_position{
+	max-width: 100%;
+	height: auto;
+}
+.text_game{
+	position: absolute;
+	top: 200px;
+	color:#fff;
+}
+.Top_menu_blog,.Top_menu_about{
+	color: #aaa;
+}
+.Top_menu_game{
+	color:#fff;
+}
+iframe{
+	margin-left:450px;
+	width: 960px;
+	height: 540px;
+}
+.slider{
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+	border: 10px solid #fff;
+}
+.middle{
+	top:50%;
+	left: 50%;
+	transform: translate(25%);
+}
+.navigation{
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.bar{
+	height:10px;
+	width: 15px;
+	margin:6px;
+	cursor: pointer;
+	background-color: #eee;
+	opacity:.7;
+	border-radius: 10px;
+	transition:all .4s ease;
+}
+.bar:hover{
+	opacity:1;
+	transform:scale(1.1);
+}
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+.slides{
+	width: 800%;
+	height: 100%;
+	display: flex;
+}
+.slide{
+	width: 12.5%;
+	transition:all .6s ease;
+}
+.slide img{
+	width:100%;
+	height: auto;
+
+}
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -12.5%;
+}
+#r3:checked ~ .s1{
+	margin-left: -25%;
+}
+#r4:checked ~ .s1{
+	margin-left:-37.5%;
+}
+#r5:checked ~ .s1{
+	margin-left: -50%;
+}
+#r6:checked ~ .s1{
+	margin-left: -62.5%;
+}
+#r7:checked ~ .s1{
+	margin-left: -75%;
+}
+#r8:checked ~ .s1{
+	margin-left: -87.5%;
+}
+.info_game{
+	min-width: 100%;
+	min-height: 720px;
+}
+.video_game{
+	min-width: 100%;
+	max-height: 600px;
+	min-height: 600px;
+	padding-top:50px;
+}

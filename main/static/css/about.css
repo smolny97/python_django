@@ -1,0 +1,30 @@
+.Top_menu_blog,.Top_menu_game{
+	color: #aaa;
+}
+.Top_menu_about{
+	color:#fff;
+}
+.gif_game{
+	max-width:100%;
+}
+.bloc_about{
+	min-height: 450px;
+}
+.name_about{
+	color:#fff;
+	font-size: 38px;
+	margin:100px 0px 70px 50px;
+}
+.text_about{
+	color:#fff;
+	font-size: 24px;
+	text-indent: 50px; 
+	text-align:justify;
+	line-height: 1.5;
+}
+iframe{
+	margin-top:50px;
+	width: 1120px;
+	height: 630px;
+	margin-bottom:50px;
+}

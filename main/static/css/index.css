@@ -1,0 +1,20 @@
+.Top_menu a{
+	color: #aaa;
+}
+.gif_game{
+	max-width:100%;
+}
+.game_box{
+	background-color: red;
+	width: 320px;
+	height: 180px;
+	margin-left:25px;
+	margin-right:25px;
+	display:inline-block;
+}
+.game_boxs{
+	width: 100%;
+	padding-top:100px;
+	padding-bottom:100px;
+	text-align:center;
+}

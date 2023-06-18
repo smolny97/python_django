@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+{{title}}
+{% endblock %}
+{% block li %}
+<li><a class="Top_menu_game" href={% url 'games' %}>Игры</a></li>
+<li><a class="Top_menu_blog" href={% url 'blog' %}>Блог</a></li>
+<li><a class="Top_menu_about" href={% url 'about' %}>О нас</a></li>
+{% endblock %}
+{% block link %}
+	<link rel="stylesheet" href={% static 'css/about.css' %}>
+{% endblock %}
+{% block content %}
+<img class="gif_game" src={% static 'images/1.gif' %}>
+<div class="main_box bloc_about">
+<p class="name_about">Klei — студия видеоигр, расположенная в Ванкувере, Канада.
+<p class="text_about">Когда вместе работают и учатся талантливые, творческие люди, бесстрашные в создании чего-то действительно нового, происходят удивительные вещи. Мы неустанно экспериментируем, совершаем множество ошибок и каждый день получаем удивительные открытия. С 2005 года мы наблюдаем, как этот процесс дает потрясающие результаты.
+<p class="text_about">От Mark of the Ninja до Don't Starve — мы создали новаторские игры в разных жанрах. Мы всегда ищем людей, которые любят учиться, чтобы присоединиться к нам в нашем путешествии.
+<iframe class="video_about"  src="https://www.youtube.com/embed/Rq_tgaJN_zQ"></iframe>
+</div>
+{% endblock %}

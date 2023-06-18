@@ -1,0 +1,36 @@
+.Top_menu_blog,.Top_menu_about{
+	color: #aaa;
+}
+.Top_menu_game{
+	color:#fff;
+}
+.bloc_img{
+	max-width: 70px;
+	max-height: auto;
+}
+.bloc_banner{
+	max-width: 100%;
+}
+.games{
+	max-width: 100%;
+	min-height: 100vh;
+	
+}
+.box_game{
+	padding-right: 35%;
+	padding-left: 35%;
+	padding-top:30%;
+	font-size: 18px;
+	text-align:center;
+	line-height: 1.5;
+
+}
+.text_game{
+		color:#fff;
+}
+.link_to_blog{
+	background-color:#888;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 5px;
+}

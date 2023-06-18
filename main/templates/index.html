@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+{% endblock %}
+{% block link %}
+	<link rel="stylesheet" href={% static 'css/index.css' %}>
+{% endblock %}
+{% block li %}
+<li><a class="Top_menu_game" href={% url 'games' %}>Игры</a></li>
+<li><a class="Top_menu_blog" href={% url 'blog' %}>Блог</a></li>
+<li><a class="Top_menu_about" href={% url 'about' %}>О нас</a></li>
+{% endblock %}
+{% block content %}
+<img class="gif_game" src={% static 'images/1.gif' %}>
+<div class="game_boxs" style="background-image:url({% static picture_info %})">
+	<div class="game_box">
+		
+	</div>
+	<div class="game_box">
+		
+	</div>
+	<div class="game_box">
+		
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+Блог
+{% endblock %}
+{% block li %}
+<li><a class="Top_menu_game" href={% url 'games' %}>Игры</a></li>
+<li><a class="Top_menu_blog" href={% url 'blog' %}>Блог</a></li>
+<li><a class="Top_menu_about" href={% url 'about' %}>О нас</a></li>
+{% endblock %}
+{% block link %}
+	<link rel="stylesheet" href={% static 'css/blog.css' %}>
+{% endblock %}
+{% block content %}
+<div class="main_box">
+{% for el in blog %}
+	<div class="bloc">
+		<p class="data_blog">{{el.data}}
+		{{el.text_blog}}
+		{% if el.img_blog != "-" %}
+			<img class="bloc_img" src={% static el.img_blog %}>
+		{% elif el.video_blog != "-" %}
+			<iframe src={{el.video}}></iframe>
+		{% endif %}
+	</div>
+{% endfor %}
+</div>
+
+{% endblock %}
